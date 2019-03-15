@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Fake Merchant app</string>
+    <string name="payOder">Thanh toán</string>
+    <string name="qr_code_not_found">Không thể quét QR Code để thanh toán đơn h</string>
+    <string name="scan_and_pay">Nhấn ScanQR Code và thanh toán đơn hàng nhanh chóng</string>
+    <string name="scan_qr_code">Scan QR Code</string>
+
+    <string name="btn_yes">Yes</string>
+</resources>
