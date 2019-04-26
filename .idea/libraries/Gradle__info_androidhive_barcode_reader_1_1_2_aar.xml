@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: info.androidhive:barcode-reader:1.1.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/barcode-reader-1.1.2.aar/6999882c639238629bd4def892ec9dde/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/barcode-reader-1.1.2.aar/6999882c639238629bd4def892ec9dde/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/info.androidhive/barcode-reader/1.1.2/6aecaf3ab79532afc133edebc2aaa468685d3db6/barcode-reader-1.1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

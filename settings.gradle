@@ -1,1 +1,1 @@
-include ':app', ':zpdk-production-release'
+include ':app', ':zpdk-sandbox-release'

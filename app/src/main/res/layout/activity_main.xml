@@ -9,8 +9,8 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
         android:gravity="center"
         android:orientation="vertical"
         android:paddingLeft="40dp"
@@ -35,6 +35,35 @@
             android:text="@string/scan_and_pay"
             android:textColor="@android:color/white"
             android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/myRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:checkedButton="@+id/payoption">
+
+            <RadioButton
+                android:id="@+id/payoption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radio_bg"
+                android:button="@android:color/transparent"
+                android:padding="10dp"
+                android:text="Pay Option"
+                android:textColor="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/linkoption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radio_bg"
+                android:button="@android:color/transparent"
+                android:checked="true"
+                android:padding="10dp"
+                android:text="Link Option"
+                android:textColor="#FFFFFF" />
+        </RadioGroup>
     </LinearLayout>
 
     <Button

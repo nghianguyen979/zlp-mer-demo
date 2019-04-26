@@ -5,4 +5,5 @@ package vn.com.zalopay.demozpdk.Constant;
  */
 public class ConstantCode {
     public static String TAG = "Merchant Callback";
+    public static String KEY_TESTING_TYPE = "Type_For_Testing";
 }

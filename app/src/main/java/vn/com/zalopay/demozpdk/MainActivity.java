@@ -12,18 +12,25 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import vn.com.zalopay.demozpdk.Constant.ConstantCode;
 import vn.com.zalopay.demozpdk.Scan.ScanActivity;
 import vn.com.zalopay.demozpdk.interfaces.IMerchantNotification;
 import vn.zalopay.sdk.MerchantReceiver;
 import vn.zalopay.sdk.ZaloPayErrorCode;
+import vn.zalopay.sdk.ZaloPaySDK;
 
 public class MainActivity extends AppCompatActivity {
 
     Button mButtonScan;
-
+    private RadioGroup radioGroup;
+    private RadioButton payOption, linkOption;
     public static IMerchantNotification sIMerchantNotification;
+    private int TESTING_TYPE = 1; // default is link option
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,10 +42,11 @@ public class MainActivity extends AppCompatActivity {
         mButtonScan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, ScanActivity.class));
+                Intent intent = new Intent(MainActivity.this, ScanActivity.class);
+                intent.putExtra(ConstantCode.KEY_TESTING_TYPE, TESTING_TYPE);
+                startActivity(intent);
             }
         });
-
         sIMerchantNotification = new IMerchantNotification() {
             @Override
             //    @Override
@@ -75,7 +83,25 @@ public class MainActivity extends AppCompatActivity {
 
             }
         };
+        handleViewOptions();
+    }
 
+    private void handleViewOptions() {
+        radioGroup = (RadioGroup) findViewById(R.id.myRadioGroup);
+
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                // find which radio button is selected
+                if (checkedId == R.id.payoption) {
+                    TESTING_TYPE = 0;
+                } else if (checkedId == R.id.linkoption) {
+                    TESTING_TYPE = 1;
+                }
+            }
+
+        });
     }
 
     private void transparentToolbar() {

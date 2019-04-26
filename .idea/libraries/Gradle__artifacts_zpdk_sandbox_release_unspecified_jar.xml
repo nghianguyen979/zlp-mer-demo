@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: artifacts:zpdk-sandbox-release:unspecified@jar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/zpdk-sandbox-release.aar/f9c965cb77cfde6f4a2c71b06825abe8/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/zpdk-sandbox-release.aar/f9c965cb77cfde6f4a2c71b06825abe8/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
