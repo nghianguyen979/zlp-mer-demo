@@ -1,24 +1,15 @@
 package vn.com.zalopay.demozpdk.ZPDKListener;
 
-import android.annotation.SuppressLint;
 import android.app.AlertDialog;
-import android.content.ComponentName;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.os.Handler;
 import android.os.Looper;
-import android.text.Html;
-import android.text.Spanned;
 import android.util.Log;
-
 import vn.com.zalopay.demozpdk.Constant.ConstantCode;
-import vn.com.zalopay.demozpdk.Constant.PaymentErrorCode;
-import vn.com.zalopay.demozpdk.Helper.Dialog;
 import vn.com.zalopay.demozpdk.MainActivity;
-import vn.com.zalopay.demozpdk.Scan.ScanActivity;
+import vn.zalopay.listener.ZaloPayListener;
 import vn.zalopay.sdk.ZaloPayErrorCode;
-import vn.zalopay.sdk.ZaloPayListener;
 import vn.zalopay.sdk.ZaloPaySDK;
 
 
