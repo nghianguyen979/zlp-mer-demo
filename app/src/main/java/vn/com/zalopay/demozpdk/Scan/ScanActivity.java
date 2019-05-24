@@ -119,5 +119,6 @@ public class ScanActivity extends AppCompatActivity implements BarcodeReader.Bar
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         ZaloPaySDK.getInstance().onActivityResult(requestCode, resultCode, data);
+        finish();
     }
 }
