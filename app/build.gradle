@@ -28,5 +28,5 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     // vision barcode scanner
     implementation 'info.androidhive:barcode-reader:1.1.2'
-    implementation project(':zpdk-production-release')
+    implementation project(path: ':zpdk-sandboxMerchant-release')
 }
